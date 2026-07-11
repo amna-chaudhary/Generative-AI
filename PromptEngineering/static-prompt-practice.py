@@ -1,17 +1,17 @@
 from langchain_groq import ChatGroq
 from dotenv import load_dotenv
-import streamlit as st
+# import streamlit as st
 
 load_dotenv()
 model = ChatGroq(
     model="llama-3.1-8b-instant"
 )
 
-st.header("HELLO WORLD")
+# st.header("Topic Summarizer")
 
-user_input = st.text_input("Enter your Prompt: ")
+user_input = input("Enter your Prompt: ")
 result = model.invoke(user_input)
-st.write("Hello World")
+print(result.content)
 
 
 

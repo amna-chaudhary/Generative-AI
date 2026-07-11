@@ -3,7 +3,9 @@ from langchain_groq import ChatGroq# import streamlit as st
 from dotenv import load_dotenv
 
 load_dotenv()
-model = ChatGroq()
+model = ChatGroq(
+    model="llama-3.3-70b-versatile"
+)
 
 paper_input = input("Enter the paper content: ")
 style_input = input("Enter the style of the summary: ")
