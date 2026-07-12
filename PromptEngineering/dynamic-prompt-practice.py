@@ -1,3 +1,16 @@
+"""
+DYNAMIC PROMPT ENGINEERING
+
+1. Basically this is a practice of dynamic prompt engineering.
+   In which we are using a dynamic prompt to get the result from the model 
+   means using a flexible prompt to get the result from the model.
+   The prompt can be modified based on the input provided by the user.
+   Model can take the extra information to provide response such as preferences etc 
+   and also it provides the response based on the prompt.
+   
+"""
+
+
 from langchain_core.prompts import PromptTemplate
 from langchain_groq import ChatGroq# import streamlit as st
 from dotenv import load_dotenv

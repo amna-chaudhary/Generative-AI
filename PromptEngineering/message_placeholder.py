@@ -1,3 +1,17 @@
+"""
+MESSAGE PLACEHOLDER PROMPT ENIGNEERING
+
+1. Basically this is a practice of message placeholder prompt engineering.
+   In which we are using a message placeholder prompt to get the result from the model
+   means using a message placeholder prompt to get the result from the model.
+   The message placeholder prompt is used to store the previous messages in the conversation.
+   And also we spescify the eachs message type in the conversation such as system message, human message and AI message.
+   In it, model can take the extra information to provide response such as preferences etc and also
+
+"""
+
+
+
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_groq import ChatGroq
