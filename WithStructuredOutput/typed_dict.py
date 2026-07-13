@@ -17,6 +17,6 @@ class Joke(TypedDict):
     joke: str
     punchline:str
 
-structured_model = model.with_structured_output(Joke)
+structured_model = model.with_structured_output(Joke, method="function_calling")
 structured_result = structured_model.invoke("Tell a simple joke in 2 sentences.")
 print(structured_result)

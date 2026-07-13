@@ -22,6 +22,6 @@ class Joke(TypedDict):
     joke: Annotated[str, "Tell me simple joke."]
     punchline: Annotated[Optional[str], "Tell a punchline of the joke."]
 
-structured_model = model.with_structured_output(Joke)
+structured_model = model.with_structured_output(Joke, method="function_calling")
 structured_result = structured_model.invoke("Tell a simple joke in 2 sentences.")
 print(structured_result)
