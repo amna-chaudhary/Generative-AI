@@ -48,10 +48,13 @@ Models are the foundation of LangChain. They generate responses, create embeddin
 Prompts define how instructions are given to the language model. LangChain provides reusable prompt templates for creating dynamic prompts.
 
 **Topics**
+- Static Prompts
+- Dynamic Prompts
 - Prompt Templates
 - Chat Prompt Templates
 - System Messages
 - Human Messages
+- AI Messages
 - Dynamic Variables
 
 ---
@@ -63,10 +66,23 @@ Chains connect multiple components together to create AI workflows. The output f
 **Topics**
 - LLM Chains
 - Sequential Chains
+- Parallel Chains
 - Custom Chains
 - Document Chains
+- Conditional Chains
 
 ---
+
+
+## 4. Runnables
+
+**Topics**
+- RunnableLambda
+- RunnableParallel
+- Pipe Operator
+
+---
+
 
 ## 4. Agents
 
