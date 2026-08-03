@@ -1,11 +1,11 @@
-"""
-    OPTIONAL EXAMPLE: Using structured output with optional fields.
+# """
+#     OPTIONAL EXAMPLE: Using structured output with optional fields.
 
-    Used with the optional fields.
-    Code can run perfectly without the optional fields, but if they are provided, 
-    they will be validated and parsed correctly.
+#     Used with the optional fields.
+#     Code can run perfectly without the optional fields, but if they are provided, 
+#     they will be validated and parsed correctly.
 
-"""
+# """
 
 from langchain_openai import ChatOpenAI
 from typing import TypedDict, Annotated, Optional

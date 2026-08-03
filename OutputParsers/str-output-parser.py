@@ -1,9 +1,9 @@
-""""
-    STRING OUTPUT PARSER
+# """"
+#     STRING OUTPUT PARSER
 
-    Used to parse the output of the model into a string.
+#     Used to parse the output of the model into a string.
 
-"""
+# """
 
 from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 from dotenv import load_dotenv

@@ -1,10 +1,11 @@
-""""
-    ANNOTATED TYPED DICT
+# """"
+#     ANNOTATED TYPED DICT
 
-    In it we provide more guidance about what we want to get from the model.
-    Its same like typed dict but in it we also provide the description about the each key in the typed dict.
+#     In it we provide more guidance about what we want to get from the model.
+#     Its same like typed dict but in it we also provide the description about the each key in the typed dict.
     
-"""
+# """
+
 from typing import TypedDict, Annotated
 
 from dotenv import load_dotenv

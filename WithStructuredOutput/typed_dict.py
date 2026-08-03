@@ -1,8 +1,8 @@
-"""
-    Simply used to define the TypedDict (Dictionary) for the structured output of the model.
-    means before creating the dictionary we have to define the structure (uisng class) of the dictionary.
+# """
+#     Simply used to define the TypedDict (Dictionary) for the structured output of the model.
+#     means before creating the dictionary we have to define the structure (uisng class) of the dictionary.
 
-"""
+# """
 
 from langchain_openai import ChatOpenAI
 from typing import TypedDict

@@ -1,4 +1,4 @@
-# 🤖 Generative AI
+��# 🤖 Generative AI
 
 > **Learning with Practice**
 
@@ -24,7 +24,7 @@ This repository documents my journey of learning **Generative AI** through pract
 
 # 🔗 LangChain Framework
 
-**LangChain** is an open-source framework that helps developers build applications powered by **Large Language Models (LLMs)**. It provides modular components that simplify creating chatbots, AI assistants, Retrieval-Augmented Generation (RAG) systems, document question-answering applications, and AI agents.
+**LangChain** is an open-source framework that helps developers build applications powered by **Large Language Models (LLMs)**. It provides modular components that simplify creating chatbots, AI assistants, Retrieval-Augmented Generation (RAGsystems, document question-answering applications, and AI agents.
 
 ---
 
@@ -163,4 +163,4 @@ This repository is designed to learn **Generative AI** through hands-on practice
 
 ## ⭐ Happy Learning!
 
-> *"The best way to master Generative AI is by building projects and experimenting with ideas."*
+> *"The best way to master Generative AI is by building projects and experimenting with ideas."*

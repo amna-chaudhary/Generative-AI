@@ -1,7 +1,7 @@
-"""
-    This is a simple example of using the OpenAI LLM using api key from .env file.
-    In this example, we are using the OpenAI Chat Model to get a joke in 2 sentences.
-"""
+# """
+#     This is a simple example of using the OpenAI LLM using api key from .env file.
+#     In this example, we are using the OpenAI Chat Model to get a joke in 2 sentences.
+# """
 
 
 
