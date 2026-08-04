@@ -93,4 +93,7 @@ result = chain.invoke(
     }
 )
 
-print(result)
+# print(result)
+
+# Visualizing chain
+chain.get_graph().print_ascii()
