@@ -46,4 +46,5 @@ result = chain.invoke(
     {"topic": "Pakistan"}
 )
 
-print(result)
+print(result)# Visualizing chain
+chain.get_graph().print_ascii()
