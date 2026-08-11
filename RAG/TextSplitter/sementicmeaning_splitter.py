@@ -19,3 +19,12 @@
 
 
 """
+#import for semenatic meanging text splitter
+from langchain_text_splitters import SemanticMeaningTextSplitter
+from langchain.embeddings import OpenAIEmbeddings
+from dotenv import load_dotenv
+
+load_dotenv()  # Load environment variables from .env file
+
+embedding_model = OpenAIEmbeddings()
+
