@@ -1,166 +1,142 @@
-��# 🤖 Generative AI
+# 🤖 Generative AI — LangChain Learning Lab
 
-> **Learning with Practice**
+**A hands-on journey through building LLM-powered applications with LangChain**
 
-This repository documents my journey of learning **Generative AI** through practical examples and hands-on projects. The primary focus is on understanding the **LangChain Framework** and its core components by building real-world AI applications.
-
----
-
-# 📚 Table of Contents
-
-- [LangChain Framework](#-langchain-framework)
-- [LangChain Components](#-langchain-components)
-  - [1. Models](#1-models)
-  - [2. Prompts](#2-prompts)
-  - [3. Chains](#3-chains)
-  - [4. Agents](#4-agents)
-  - [5. Indexes](#5-indexes)
-  - [6. Memory](#6-memory)
-- [Tech Stack](#-tech-stack)
-- [Repository Structure](#-repository-structure)
-- [Learning Goal](#-learning-goal)
+Practical implementations of chains, models, prompt engineering, RAG pipelines, and runnables — built to master real-world Generative AI development.
 
 ---
 
-# 🔗 LangChain Framework
+## 🎯 About This Repository
 
-**LangChain** is an open-source framework that helps developers build applications powered by **Large Language Models (LLMs)**. It provides modular components that simplify creating chatbots, AI assistants, Retrieval-Augmented Generation (RAGsystems, document question-answering applications, and AI agents.
+This repo documents my **structured, hands-on learning path** through LangChain — going from the fundamentals of prompts and chains to building a complete **Retrieval-Augmented Generation (RAG)** pipeline. Every folder represents a core concept in modern LLM application development, implemented and tested with working code.
 
----
-
-# 🧩 LangChain Components
-
-## 1. Models
-
-Models are the foundation of LangChain. They generate responses, create embeddings, and perform reasoning tasks.
-
-**Topics**
-- LLMs
-- Chat Models
-- Embedding Models
-- Local Models (Ollama)
-- Cloud Models (OpenAI, Gemini)
+> Built as part of my journey toward becoming a **Generative AI Engineer**, alongside real-world projects like an AI-driven RAG bot and n8n automation workflows.
 
 ---
 
-## 2. Prompts
+## 🗂️ What's Inside
 
-Prompts define how instructions are given to the language model. LangChain provides reusable prompt templates for creating dynamic prompts.
+### 🔗 Chains
+Composing LLM calls into powerful workflows
+- `simple_chain_example.py`
+- `sequential_chain.py`
+- `parallel_chain.py`
+- `conditional_chain.py`
 
-**Topics**
-- Static Prompts
-- Dynamic Prompts
-- Prompt Templates
-- Chat Prompt Templates
-- System Messages
-- Human Messages
-- AI Messages
-- Dynamic Variables
+### 🧠 Models
+Connecting to different LLM providers
+- `llm_openai.py`
+- `chatmodel_openai.py`
+- `huggingface_inference_api.py`
+- `huggingface_run_locally.py`
 
----
+### 📤 OutputParsers
+Turning raw LLM text into structured data
+- `str-output-parser.py`
+- `json-output-parser.py`
+- `pydantic-output-parser.py`
+- `structured-output-parser.py`
 
-## 3. Chains
+### ✍️ PromptEngineering
+Designing effective, reusable prompts
+- `static-prompt-practice.py`
+- `dynamic-prompt-practice.py`
+- `message_placeholder.py`
 
-Chains connect multiple components together to create AI workflows. The output from one step becomes the input for the next.
+### ⚙️ Runnables
+LangChain's composable execution primitives
+- `runnablePassthrough.py`
+- `runnableParallel.py`
+- `runnableLambda.py`
+- `runnableBranch.py`
 
-**Topics**
-- LLM Chains
-- Sequential Chains
-- Parallel Chains
-- Custom Chains
-- Document Chains
-- Conditional Chains
+### 📦 WithStructuredOutput
+Enforcing schema-based, validated LLM responses
 
----
+### 🔍 RAG — Retrieval-Augmented Generation *(Core Module)*
 
+The most in-depth module — a complete RAG pipeline built from the ground up:
 
-## 4. Runnables
-
-**Topics**
-- RunnableLambda
-- RunnableParallel
-- Pipe Operator
-
----
-
-
-## 4. Agents
-
-Agents enable LLMs to make decisions, select tools, and execute tasks automatically.
-
-**Topics**
-- Tool Calling
-- Multi-Step Reasoning
-- Web Search
-- Calculator
-- Python Tools
-
----
-
-## 5. Indexes
-
-Indexes help retrieve information from external knowledge sources and are commonly used in Retrieval-Augmented Generation (RAG) applications.
-
-**Topics**
-- Document Loaders
-- Text Splitters
-- Embeddings
-- Vector Databases
-- Retrievers
-- Similarity Search
-
----
-
-## 6. Memory
-
-Memory allows AI applications to remember previous interactions and maintain conversation context.
-
-**Topics**
-- Conversation Buffer Memory
-- Conversation Summary Memory
-- Window Memory
-- Entity Memory
-
----
-
-# 💻 Tech Stack
-
-- Python
-- LangChain
-- OpenAI
-- Google Gemini
-- Ollama
-- Hugging Face
-- ChromaDB
-- FAISS
-- Jupyter Notebook
-
----
-
-# 📁 Repository Structure
-
-```text
-Generative-AI/
+```
+RAG/
+├── DocumentLoaders/        Load data from PDFs, CSVs, text & web pages
+│   ├── Files/               (AMNA_BIBI.pdf, currency.csv, sample.txt)
+│   ├── csv_loader.py
+│   ├── pyppdf_loader.py
+│   ├── text_loader.py
+│   ├── webbase_loader.py
+│   └── directoryloader.py
 │
-├── Models/
-├── Prompts/
-├── Chains/
-├── Agents/
-├── Indexes/
-├── Memory/
-├── Projects/
-├── notebooks/
-└── README.md
+├── TextSplitter/           Chunk documents intelligently
+│   ├── lengthbased_splitter.py
+│   └── textstructured_splitter.py
+│
+├── Retrievers/              Fetch relevant context for queries
+└── VectorDatabase/          Store & search embeddings
 ```
 
 ---
 
-# 🎯 Learning Goal
+## 🧭 Learning Path
 
-This repository is designed to learn **Generative AI** through hands-on practice. Each section contains explanations, code examples, and practical implementations to build a strong understanding of LangChain and modern AI application development.
+```
+Prompt Engineering → Models → Output Parsers → Chains → Runnables → RAG Pipeline → Structured Output
+```
+
+This repo follows a **progressive learning structure** — starting with prompt design fundamentals and building up to a full retrieval-augmented pipeline capable of answering questions from custom documents.
 
 ---
 
-## ⭐ Happy Learning!
+## 🛠️ Tech Stack
 
-> *"The best way to master Generative AI is by building projects and experimenting with ideas."*
+| Category | Tools |
+|---|---|
+| **Language** | Python 3.10+ |
+| **Framework** | LangChain |
+| **LLM Providers** | OpenAI API, HuggingFace (Inference API & local) |
+| **Document Sources** | PDF, CSV, TXT, Web pages |
+| **Core Concepts** | Chains, Runnables, Output Parsers, RAG, Structured Output |
+
+---
+
+## 🚀 Getting Started
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/amna-chaudhary/Generative-AI.git
+cd Generative-AI
+
+# 2. Create & activate a virtual environment
+python -m venv venv
+venv\Scripts\activate        # Windows
+source venv/bin/activate     # macOS/Linux
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Add your API keys in a .env file
+# OPENAI_API_KEY=your_key_here
+# HUGGINGFACEHUB_API_TOKEN=your_key_here
+```
+
+Run any module independently, e.g.:
+```bash
+python Chains/sequential_chain.py
+```
+
+---
+
+## 📌 Why This Repo
+
+This isn't just practice code — it's a **structured reference** I built to deeply understand how production LLM applications are architected, and it directly feeds into my real-world projects (RAG bots, AI agents, automation workflows). Feel free to explore, fork, or reach out if you'd like to collaborate.
+
+---
+
+## 👩‍💻 Author
+
+**Amna Chaudhary**
+Generative AI Engineer | LangChain • RAG • LLM Integrations
+
+GitHub: [amna-chaudhary](https://github.com/amna-chaudhary)
+
+⭐ *If this repo helped you, consider giving it a star!*
