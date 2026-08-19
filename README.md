@@ -132,9 +132,11 @@ This isn't just practice code — it's a **structured reference** I built to dee
 
 ---
 
+
+
 ## 👩‍💻 Author
 
-**Amna Chaudhary**
+**Amna Bibi**
 Generative AI Engineer | LangChain • RAG • LLM Integrations
 
 GitHub: [amna-chaudhary](https://github.com/amna-chaudhary)
